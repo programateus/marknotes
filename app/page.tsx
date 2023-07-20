@@ -1,5 +1,5 @@
-import { MilkdownEditorWrapper } from "@/src/presentation/pages/Home";
+import HomePage from "@/presentation/pages/Home";
 
 export default function Home() {
-  return <MilkdownEditorWrapper />;
+  return <HomePage />;
 }

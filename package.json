@@ -10,14 +10,24 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@milkdown/core": "^7.2.4",
-    "@milkdown/ctx": "^7.2.4",
-    "@milkdown/plugin-emoji": "^7.2.4",
-    "@milkdown/preset-commonmark": "^7.2.4",
-    "@milkdown/prose": "^7.2.4",
-    "@milkdown/react": "^7.2.4",
-    "@milkdown/theme-nord": "^7.2.4",
-    "@milkdown/transformer": "^7.2.4",
+    "@floating-ui/react": "^0.24.8",
+    "@iconify-icon/react": "^1.0.8",
+    "@tiptap/extension-bubble-menu": "^2.0.4",
+    "@tiptap/extension-floating-menu": "^2.0.4",
+    "@tiptap/extension-gapcursor": "^2.0.4",
+    "@tiptap/extension-image": "^2.0.4",
+    "@tiptap/extension-placeholder": "^2.0.4",
+    "@tiptap/extension-table": "^2.0.4",
+    "@tiptap/extension-table-cell": "^2.0.4",
+    "@tiptap/extension-table-header": "^2.0.4",
+    "@tiptap/extension-table-row": "^2.0.4",
+    "@tiptap/extension-task-item": "^2.0.4",
+    "@tiptap/extension-task-list": "^2.0.4",
+    "@tiptap/extension-underline": "^2.0.4",
+    "@tiptap/pm": "^2.0.4",
+    "@tiptap/react": "^2.0.4",
+    "@tiptap/starter-kit": "^2.0.4",
+    "@tiptap/suggestion": "^2.0.4",
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
@@ -34,6 +44,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
     "@tauri-apps/cli": "^1.4.0",
-    "daisyui": "^3.2.1"
+    "daisyui": "^3.2.1",
+    "postcss-nesting": "^12.0.0"
   }
 }
