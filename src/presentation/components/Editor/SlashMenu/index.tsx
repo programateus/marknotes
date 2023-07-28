@@ -1,9 +1,9 @@
 import tippy, { Instance } from "tippy.js";
 import { Extension, Editor, Range } from "@tiptap/core";
-import { ReactRenderer } from "@tiptap/react";
 import Suggestion, { SuggestionOptions } from "@tiptap/suggestion";
 
 import { CommandList } from "./CommandList";
+import { ReactRenderer } from "../React";
 
 const ITEMS: SlashMenuItem[] = [
   {

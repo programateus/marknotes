@@ -11,6 +11,9 @@ module.exports = {
         DEFAULT: {
           css: {
             table: false,
+            th: false,
+            tr: false,
+            td: false,
           },
         },
       }),

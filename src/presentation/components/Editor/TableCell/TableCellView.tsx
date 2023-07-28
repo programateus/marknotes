@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
-import { NodeViewContent, NodeViewProps, NodeViewWrapper } from "@tiptap/react";
 import { TableCellButton } from "./TableCellButton";
+import { NodeViewContent, NodeViewProps, NodeViewWrapper } from "../React";
 
 export const TableCellView = ({
   decorations,

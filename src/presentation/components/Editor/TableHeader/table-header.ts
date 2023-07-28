@@ -1,7 +1,7 @@
 import { mergeAttributes, Node } from "@tiptap/core";
-import { ReactNodeViewRenderer } from "@tiptap/react";
 
 import { TableCellView } from "../TableCell/TableCellView";
+import { ReactNodeViewRenderer } from "../React";
 
 export interface TableHeaderOptions {
   HTMLAttributes: Record<string, any>;

@@ -100,7 +100,7 @@ export const TooltipView = ({ editor }: TooltipViewProps) => {
         </button>
       </div>
 
-      {/* {editor.state.selection instanceof CellSelection && (
+      {editor.state.selection instanceof CellSelection && (
         <>
           <div className="divider lg:divider-horizontal" />
           <div className="space-x-1">
@@ -109,7 +109,6 @@ export const TooltipView = ({ editor }: TooltipViewProps) => {
                 className="btn btn-sm"
                 onClick={() => {
                   editor.chain().focus().mergeCells().run();
-                  editor.commands.fixTables();
                 }}
               >
                 <Icon icon="ri:merge-cells-horizontal" />
@@ -119,7 +118,6 @@ export const TooltipView = ({ editor }: TooltipViewProps) => {
                 className="btn btn-sm"
                 onClick={() => {
                   editor.chain().focus().splitCell().run();
-                  editor.commands.fixTables();
                 }}
               >
                 <Icon icon="ri:split-cells-horizontal" />
@@ -127,7 +125,7 @@ export const TooltipView = ({ editor }: TooltipViewProps) => {
             )}
           </div>
         </>
-      )} */}
+      )}
     </div>
   );
 };

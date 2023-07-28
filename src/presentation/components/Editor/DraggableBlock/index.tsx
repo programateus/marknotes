@@ -9,11 +9,8 @@ export interface DBlockOptions {
 
 declare module "@tiptap/core" {
   interface Commands<ReturnType> {
-    dBlock: {
-      /**
-       * Toggle a dBlock
-       */
-      setDBlock: (position?: number) => ReturnType;
+    draggableBlock: {
+      setDraggableBlock: (position?: number) => ReturnType;
     };
   }
 }
@@ -53,7 +50,7 @@ export const DraggableBlock = Node.create<DBlockOptions>({
 
   addCommands() {
     return {
-      setDBlock:
+      setDraggableBlock:
         (position) =>
         ({ state, chain }) => {
           const {
@@ -84,7 +81,7 @@ export const DraggableBlock = Node.create<DBlockOptions>({
 
   addKeyboardShortcuts() {
     return {
-      "Mod-Alt-0": () => this.editor.commands.setDBlock(),
+      "Mod-Alt-0": () => this.editor.commands.setDraggableBlock(),
       Enter: ({ editor }) => {
         const {
           selection: { $head, from, to },
@@ -93,7 +90,7 @@ export const DraggableBlock = Node.create<DBlockOptions>({
 
         const parent = $head.node($head.depth - 1);
 
-        if (parent.type.name !== "dBlock") return false;
+        if (parent.type.name !== "draggableBlock") return false;
 
         let currentActiveNodeTo = -1;
 

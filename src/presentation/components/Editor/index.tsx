@@ -1,11 +1,9 @@
 "use client";
 
-import { BubbleMenu, EditorContent, useEditor } from "@tiptap/react";
-
 import StarterKit from "@tiptap/starter-kit";
 
 import Image from "@tiptap/extension-image";
-import Placeholder from "@tiptap/extension-placeholder";
+// import Placeholder from "@tiptap/extension-placeholder";
 import TaskList from "@tiptap/extension-task-list";
 import TaskItem from "@tiptap/extension-task-item";
 import Underline from "@tiptap/extension-underline";
@@ -16,6 +14,8 @@ import Table from "./Table";
 import TableRow from "./TableRow";
 import TableHeader from "./TableHeader";
 import TableCell from "./TableCell";
+import { BubbleMenu, EditorContent, useEditor } from "./React";
+import { Placeholder } from "./Placeholder";
 
 const Editor = () => {
   const editor = useEditor({
@@ -26,6 +26,7 @@ const Editor = () => {
       Image,
       Placeholder.configure({
         placeholder: "Type / to start writing",
+        includeChildren: true,
       }),
       StarterKit,
       Table.configure({

@@ -8,7 +8,10 @@
   @apply px-1 max-w-full h-screen;
   @apply outline-none overflow-x-hidden;
   table {
-    @apply table-fixed w-full;
+    @apply table-fixed w-[760px] mx-auto;
+  }
+  th {
+    @apply text-left;
   }
   tr {
     @apply border-b border-base-200;
